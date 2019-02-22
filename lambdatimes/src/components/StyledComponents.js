@@ -90,7 +90,6 @@ export const HeaderDiv = styled.div`
         width: 1280px;
     }
 `
-
 export const HeaderDate = styled.span`
     align-self: flex-end;
     font-size: 11px;
