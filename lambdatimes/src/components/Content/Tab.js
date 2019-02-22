@@ -1,15 +1,11 @@
 import React from 'react';
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 
 // Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
 // if they match, the className should be: 'tab active-tab', if it is not it should just be 'tab'
 const Tab = props => {
-  
-  // console.log(props);
-  // console.log(props.tab);
-      
-
+  console.log(props);
   return (
     <div
       // Replace this dummy click handler function with your selectTabHandler function from props 
@@ -30,21 +26,13 @@ const Tab = props => {
 
 // // !!!!!!!!!!!!!!!!!!!!!!!!!!!! // //
 // // PROP TYPES - and remember to do the answers.md
-// PostContainer.propTypes = {
-//   postData: PropTypes.arrayOf(
-//       PropTypes.shape({
-//           imageUrl: PropTypes.string.isRequired,
-//           likes: PropTypes.number.isRequired,
-//           thumbnailUrl: PropTypes.string.isRequired,
-//           timestamp: PropTypes.string.isRequired,
-//           username: PropTypes.string.isRequired,
-//           comments: PropTypes.arrayOf(
-//               PropTypes.shape({
-//                   text: PropTypes.string.isRequired,
-//                   username: PropTypes.string.isRequired
-//               })
-//           )
-//       })
-//   )
-// }
+Tab.propTypes = {
+  postData: PropTypes.arrayOf(
+    PropTypes.shape({
+      selectedTabHandler: PropTypes.func.isRequired,
+      selectedTab: PropTypes.string.isRequired,
+      tab: PropTypes.string.isRequired
+    })
+  )
+}
 export default Tab;

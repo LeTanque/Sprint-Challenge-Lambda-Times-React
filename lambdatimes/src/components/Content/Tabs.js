@@ -1,6 +1,6 @@
 import React from 'react';
 import Tab from './Tab';
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 
 const Tabs = props => {
@@ -37,21 +37,13 @@ const Tabs = props => {
 
 // // !!!!!!!!!!!!!!!!!!!!!!!!!!!! // //
 // // PROP TYPES - and remember to do the answers.md
-// PostContainer.propTypes = {
-//   postData: PropTypes.arrayOf(
-//       PropTypes.shape({
-//           imageUrl: PropTypes.string.isRequired,
-//           likes: PropTypes.number.isRequired,
-//           thumbnailUrl: PropTypes.string.isRequired,
-//           timestamp: PropTypes.string.isRequired,
-//           username: PropTypes.string.isRequired,
-//           comments: PropTypes.arrayOf(
-//               PropTypes.shape({
-//                   text: PropTypes.string.isRequired,
-//                   username: PropTypes.string.isRequired
-//               })
-//           )
-//       })
-//   )
-// }
+Tabs.propTypes = {
+  postData: PropTypes.arrayOf(
+    PropTypes.shape({
+      tabs: PropTypes.array.isRequired,
+      selectedTab: PropTypes.string.isRequired,
+      selectedTabHandler: PropTypes.func.isRequired
+    })
+  )
+}
 export default Tabs;
