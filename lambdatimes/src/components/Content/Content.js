@@ -50,17 +50,14 @@ export default class Content extends Component {
   };
 
   render() {
-    console.log(this.state.cards);
-    console.log(this.state.tabs);
-    console.log(this.state.selected);
-    console.log(this.filterCards(this.state.selected));
+    // console.log(this.state.cards);
+    // console.log(this.state.tabs);
+    // console.log(this.state.selected);
+    // console.log(this.filterCards(this.state.selected));
+    // Add 2 props to the Tabs component, `selectedTab` that includes the currently selected tab
+    // and `selectTabHandler` that includes the function to change the selected tab
     return (
       <div className="content-container">
-        {/* 
-          Add 2 props to the Tabs component, 
-          `selectedTab` that includes the currently selected tab
-          and `selectTabHandler` that includes the function to change the selected tab
-        */}
         <Tabs tabs={this.state.tabs} selectedTab={this.state.selected} selectedTabHandler={this.changeSelected} />
         <Cards cards={this.filterCards(this.state.selected)} />
       </div>
