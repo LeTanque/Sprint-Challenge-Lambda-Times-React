@@ -3,6 +3,8 @@ import React from 'react';
 // import Card from './Card';
 
 const Cards = props => {
+  console.log(props); // Tab selection changes card array.
+  
   return (
     <div className="cards-container">
       {/* Using the cards prop, map over the list creating a 

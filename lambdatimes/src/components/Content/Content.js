@@ -23,23 +23,20 @@ export default class Content extends Component {
   }
 
   // this function should take in the tab and update the state with the new tab.
+  // Whichever tab is selected is now passed to changeSelected. We push that into state replacing 'all'
   changeSelected = tab => {
-    console.log(tab.target.value);
-    
-    this.setState({ [tab.target.name]: tab.target.value });
+    console.log(tab)
+    this.setState({ selected: tab });
   };
 
 /* ////////////////
     Right now this function only returns the cards on state.
     We're going to make this function more dynamic
     by using it to filter out our cards for when a tab is selcted
-      
-    Notice that we're passing this function to our <Cards /> component below.
-    This function returns an array of cards, so we can just pass it down as such.
-
+      Notice that we're passing this function to our <Cards /> component below.
+      This function returns an array of cards, so we can just pass it down as such.
     Your algorithim for the logic here is as follows: 
-    - if the selected tab is 'all' it should return all 
-      of the items from cardData. 
+    - if the selected tab is 'all' it should return all of the items from cardData. 
     - else, it should only return those cards whose 'tab' matched this.state.selected.
 */
 
