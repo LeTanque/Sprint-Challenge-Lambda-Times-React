@@ -40,9 +40,9 @@ const Tabs = props => {
 Tabs.propTypes = {
   postData: PropTypes.arrayOf(
     PropTypes.shape({
-      tabs: PropTypes.array.isRequired,
-      selectedTab: PropTypes.string.isRequired,
-      selectedTabHandler: PropTypes.func.isRequired
+      tabs: PropTypes.array,
+      selectedTab: PropTypes.string,
+      selectedTabHandler: PropTypes.func
     })
   )
 }

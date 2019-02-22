@@ -12,7 +12,8 @@ const TopBar = () => {
       <TopBarContainer>
 
         <TopBarContainerLeft>
-          <TopBarContainerLeftSpan>TOPICS</TopBarContainerLeftSpan><TopBarContainerLeftSpan>SEARCH</TopBarContainerLeftSpan>
+          <TopBarContainerLeftSpan>TOPICS</TopBarContainerLeftSpan>
+          <TopBarContainerLeftSpan>SEARCH</TopBarContainerLeftSpan>
         </TopBarContainerLeft>
       
         <TopBarContainerCenter>

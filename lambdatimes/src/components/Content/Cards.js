@@ -27,7 +27,10 @@ const Cards = props => {
 Cards.propTypes = {
   props: PropTypes.arrayOf(
     PropTypes.shape({
-      cards: PropTypes.string.isRequired,
+      headline:PropTypes.string,
+      tab:PropTypes.string,
+      author:PropTypes.string,
+      img:PropTypes.string
     })
   )
 }

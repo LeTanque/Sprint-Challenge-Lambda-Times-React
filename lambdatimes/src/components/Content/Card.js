@@ -23,7 +23,10 @@ const Card = props => {
 Card.propTypes = {
   postData: PropTypes.arrayOf(
     PropTypes.shape({
-        cards: PropTypes.string.isRequired
+      headline:PropTypes.string.isRequired,
+      tab:PropTypes.string.isRequired,
+      author:PropTypes.string.isRequired,
+      img:PropTypes.string.isRequired
     })
   )
 }
