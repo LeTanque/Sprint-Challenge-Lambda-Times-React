@@ -16,17 +16,13 @@ const Tabs = props => {
         
     
         {props.tabs.map(tabComp => (
-
           <React.Fragment key={`${tabComp}#${parseInt((Math.random()*10000),0)}`} >
 
-            <h6 className='' >{tabComp}</h6>
 
+            <Tab selectedTabHandler={props.selectedTabHandler} selectedTab={props.selectedTab} tab={tabComp} />            
 
-            <Tab selectTabHandler={tabComp.selectTabHandler} selectedTab={tabComp.selectedTab} tab={tabComp} />
-            
 
           </React.Fragment>
-
         ))};
 
 
